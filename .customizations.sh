@@ -23,3 +23,15 @@ nvm use 12.14.1 &> /dev/null
 
 # alias cls to clear
 alias cls=clear
+
+# run ssh agent
+eval "$(ssh-agent -s)" &> /dev/null
+
+# alias y to yarn
+alias y=yarn
+
+# setup thefuck
+eval $(thefuck --alias)
+
+# opt out of .NET Core telemetry 
+export DOTNET_CLI_TELEMETRY_OPTOUT=true

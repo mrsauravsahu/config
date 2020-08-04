@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # activate antigen
 source ~/config/src/antigen.zsh
 
@@ -21,3 +23,13 @@ alias cls=clear
 
 # run ssh agent
 eval "$(ssh-agent -s)" &> /dev/null
+
+currentOs=`uname -s`
+if [ $currentOs = "Linux" ]; then
+    # echo 'You are on linux'
+    . ~/config/linux.sh
+elif [ $currentOs = "Darwin" ]; then
+    # echo 'Mac huh'
+else
+    echo 'what realm is this?'
+fi

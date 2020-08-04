@@ -9,6 +9,7 @@ antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle ptavares/zsh-direnv
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # apply all antigen changes

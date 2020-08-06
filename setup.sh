@@ -34,7 +34,8 @@ nvm install --lts
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then
     # echo 'You are on linux'
-    . ./config/linux.sh
+    # TODO: check if we are specifically on Ubuntu
+    . ./setup-scripts/ubuntu.sh
 elif [ $currentOs = "Darwin" ]; then
     # echo 'Mac huh'
     brew install autojump direnv

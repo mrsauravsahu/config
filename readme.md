@@ -7,3 +7,10 @@ Safekeeping config for setting up a machine later
 How to generate the cask-software-list.txt file?
 
 `$ brew cask list | sed > cask-software-list.txt`
+
+## Requirements
+
+- zsh
+- curl
+- wget
+- git

@@ -22,7 +22,7 @@ Execute the setup script
 ```zsh
 ./<path-to-setup.sh>
 # example
-$ ~/Documents/code/personal/config/setup.sh
+~/Documents/code/personal/config/setup.sh
 ```
 
 ## Using cli-config

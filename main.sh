@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # activate antigen
-source ~/config/src/antigen.zsh
+source ./src/antigen.zsh
 
 # use antigen to setup the terminal
 antigen use oh-my-zsh
@@ -9,11 +9,15 @@ antigen bundle mafredri/zsh-async
 antigen bundle sindresorhus/pure
 antigen bundle lukechilds/zsh-nvm
 antigen bundle zsh-users/zsh-autosuggestions
+# Doesn't work on Mac without direnv and autojump installed with brew
 antigen bundle ptavares/zsh-direnv
+antigen bundle autojump
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # apply all antigen changes
 antigen apply
+
+export PATH=$NVM_DIR:$PATH
 
 # use current node LTS version with nvm
 # suppress output

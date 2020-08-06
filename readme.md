@@ -4,7 +4,7 @@ Safekeeping your shell configuration for setting up easily later
 
 ## Features
 - one script setup
-- works with Mac and Linux-Ubuntu (still running more tests to check)
+- works with Mac and Linux (Ubuntu)
 - adds lots of helper tools to the shell
 
 > Coming soon - restore apps from brew cask on Mac

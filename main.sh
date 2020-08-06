@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # activate antigen
-source ./src/antigen.zsh
+source $CLI_CONFIG_ROOT/src/antigen.zsh
 
 # use antigen to setup the terminal
 antigen use oh-my-zsh

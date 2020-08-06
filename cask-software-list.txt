@@ -11,4 +11,4 @@ spotify
 timer
 virtualbox
 visual-studio-code
-whatsapp
+rectangle

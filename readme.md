@@ -18,7 +18,12 @@ Safekeeping your shell configuration for setting up easily later
 
 ## Setup
 
-Execute the setup script
+1. Clone the repo (use ssh if you fancy)
+```zsh
+git clone http://github.com/mrsauravsahu/cli-config
+```
+
+2. Execute the setup script
 ```zsh
 ./<path-to-setup.sh>
 # example
@@ -28,7 +33,7 @@ Execute the setup script
 ## Using cli-config
 
 Once the setup is done, you can run the main script in your `.zshrc`
-You can paste the instructions you get once you run the setup script
+You can paste the instructions you get once you run the setup script.
 
 Or add these lines to your `.zshrc`:
 

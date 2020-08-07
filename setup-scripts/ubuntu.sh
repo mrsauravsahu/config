@@ -1,15 +1,15 @@
-echo "\n\nCLI-CONFIG: Updating apt\n\n"
+echo "\n\nCLI-CONFIG: Updating apt"
 cmd='sudo apt update -y'
-echo "\n\nCLI-CONFIG: $cmd"
+echo "CLI-CONFIG: $cmd"
 eval $cmd
 
-echo "\n\nCLI-CONFIG: Setting up dependencies\n\n"
+echo "\n\nCLI-CONFIG: Setting up dependencies"
 cmd='sudo apt install python python-dev python-pip'
-echo "\n\nCLI-CONFIG: $cmd"
+echo "CLI-CONFIG: $cmd"
 eval $cmd
 
 packages='autojump thefuck'
-echo "\n\nCLI-CONFIG: Installing '$packages' \n\n"
+echo "\n\nCLI-CONFIG: Installing '$packages'"
 cmd="sudo apt install $packages"
-echo "\n\nCLI-CONFIG: $cmd"
+echo "CLI-CONFIG: $cmd"
 eval $cmd

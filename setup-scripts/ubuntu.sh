@@ -3,8 +3,8 @@ sudo apt update -y
 
 echo "\n\nCLI-CONFIG: Setting up dependencies\n\n"
 deps='python python-dev python-pip'
-sudo apt install $deps -y
+sudo apt install $deps
 
-echo "\n\nCLI-CONFIG: Installing '$packages' \n\n"
 packages='autojump thefuck'
-sudo apt install $packages -y
+echo "\n\nCLI-CONFIG: Installing '$packages' \n\n"
+sudo apt install $packages

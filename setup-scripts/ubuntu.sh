@@ -1,3 +1,5 @@
-echo "\n\nCLI-CONFIG: Installing autojump\n\n"
-sudo apt update
-sudo apt install autojump thefuck
+packages='autojump thefuck'
+
+echo "\n\nCLI-CONFIG: Installing '$packages' \n\n"
+sudo apt update -y
+sudo apt install $packages -y

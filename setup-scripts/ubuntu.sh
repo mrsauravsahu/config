@@ -1,3 +1,3 @@
 echo "\n\nCLI-CONFIG: Installing autojump\n\n"
 sudo apt update
-sudo apt install autojump
+sudo apt install autojump thefuck

@@ -26,15 +26,20 @@ nvm use --lts &> /dev/null
 # alias cls to clear
 alias cls=clear
 
+# configure thefuck
+eval $(thefuck --alias)
+
 # run ssh agent
 eval "$(ssh-agent -s)" &> /dev/null
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then
     # echo 'You are on linux'
-    . ~/config/linux.sh
+    # TODO: check if we are specifically on Ubuntu
+    source $CLI_CONFIG_ROOT/init-scripts/ubuntu.sh
 elif [ $currentOs = "Darwin" ]; then
     # echo 'Mac huh'
+    source $CLI_CONFIG_ROOT/init-scripts/darwin.sh
 else
     echo 'what realm is this?'
 fi

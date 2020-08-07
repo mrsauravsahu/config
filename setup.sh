@@ -38,7 +38,7 @@ if [ $currentOs = "Linux" ]; then
     . ./setup-scripts/ubuntu.sh
 elif [ $currentOs = "Darwin" ]; then
     # echo 'Mac huh'
-    brew install autojump direnv
+    . ./setup-scripts/darwin.sh
 else
     echo 'what realm is this?'
 fi

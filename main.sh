@@ -26,6 +26,9 @@ nvm use --lts &> /dev/null
 # alias cls to clear
 alias cls=clear
 
+# configure thefuck
+eval $(thefuck --alias)
+
 # run ssh agent
 eval "$(ssh-agent -s)" &> /dev/null
 

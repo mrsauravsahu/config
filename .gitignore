@@ -7,3 +7,5 @@ src
 
 # directory where you can install programs manually
 programs
+
+*conf.sh

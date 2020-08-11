@@ -9,6 +9,17 @@ Safekeeping your shell configuration for setting up easily later
 
 > Coming soon - restore apps from brew cask on Mac
 
+## List of tools 
+- [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [antigen](https://github.com/zsh-users/antigen)
+- [nvm](https://github.com/nvm-sh/nvm)
+- [direnv](https://github.com/direnv/direnv)
+- [autojump](https://github.com/wting/autojump)
+- [sindresorhus/pure](https://github.com/sindresorhus/pure)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [thefuck](https://github.com/nvbn/thefuck)
+
 ## Requirements
 
 - zsh
@@ -16,14 +27,30 @@ Safekeeping your shell configuration for setting up easily later
 - wget
 - git
 
+To check if you have eveything installed
+
+```zsh
+which zsh curl wget git
+```
+
+should give you the path to all the four executables, like so:
+
+```zsh
+❯ which zsh curl wget git
+/bin/zsh
+/usr/local/bin/curl
+/usr/local/bin/wget
+/usr/bin/git
+```
+
 ## Setup
 
-1. Clone the repo (use ssh if you fancy)
+### 1. Clone the repo (use ssh if you fancy)
 ```zsh
 git clone http://github.com/mrsauravsahu/cli-config
 ```
 
-2. Execute the setup script
+### 2. Execute the setup script
 ```zsh
 ./<path-to-setup.sh>
 # example

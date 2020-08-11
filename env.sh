@@ -1,0 +1,1 @@
+export CLI_CONFIG_PROGRAMS_CONF=$CLI_CONFIG_ROOT/programs.conf.sh

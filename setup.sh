@@ -10,6 +10,12 @@ cd $CLI_CONFIG_ROOT
 # Convert CLI_CONFIG_ROOT to absolute path
 CLI_CONFIG_ROOT=`pwd`
 
+# load cli-config env variables
+source ./env.sh
+
+# clean all conf files
+rm *.conf.sh
+
 # Create src if not exists
 mkdir src > /dev/null 2> /dev/null || true
 
@@ -30,6 +36,9 @@ echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"
 antigen bundle lukechilds/zsh-nvm
 antigen apply
 nvm install --lts
+
+echo "\n\nCLI-CONFIG: Installing pyenv\n\n"
+. ./scripts.programs/pyenv.sh
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then

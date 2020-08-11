@@ -3,6 +3,9 @@
 # activate antigen
 source $CLI_CONFIG_ROOT/src/antigen.zsh
 
+# load cli-config env variables
+source $CLI_CONFIG_ROOT/env.sh
+
 # use antigen to setup the terminal
 antigen use oh-my-zsh
 antigen bundle mafredri/zsh-async
@@ -43,3 +46,7 @@ elif [ $currentOs = "Darwin" ]; then
 else
     echo 'what realm is this?'
 fi
+
+# TODO: change to run all *conf.sh files
+# programs configuration
+source $CLI_CONFIG_PROGRAMS_CONF

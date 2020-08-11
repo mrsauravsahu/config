@@ -13,8 +13,8 @@ CLI_CONFIG_ROOT=`pwd`
 # load cli-config env variables
 source ./env.sh
 
-# clean all conf files
-rm *.conf.sh
+# try and clean all conf files
+rm -rf '*.conf.sh' > /dev/null 2> /dev/null || true
 
 # Create src if not exists
 mkdir src > /dev/null 2> /dev/null || true

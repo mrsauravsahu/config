@@ -44,10 +44,10 @@ currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then
     # echo 'You are on linux'
     # TODO: check if we are specifically on Ubuntu
-    . ./setup-scripts/ubuntu.sh
+    . ./scripts/os-specific-setup.ubuntu.sh
 elif [ $currentOs = "Darwin" ]; then
     # echo 'Mac huh'
-    . ./setup-scripts/darwin.sh
+    . ./scripts/os-specific-setup.darwin.sh
 else
     echo 'what realm is this?'
 fi

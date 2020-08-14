@@ -23,12 +23,9 @@ mkdir current
 echo "\n\nCLI-CONFIG: Installing antigen plugin manager\n\n"
 curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 
-# TODO: move this to requirements
-# sudo apt install -y zsh
-echo "\n\nCLI-CONFIG: Installing ohmyzsh\n\n"
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
 echo "\n\nCLI-CONFIG: Installing programs\n\n"
+. $CLI_CONFIG_ROOT/scripts/install.ohmyzsh.sh
 . $CLI_CONFIG_ROOT/scripts/install.nvm.sh
 . $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
 
@@ -44,7 +41,8 @@ else
     echo 'what realm is this?'
 fi
 
+echo "\n\n#cli-config changes\n\nCLI_CONFIG_ROOT='$CLI_CONFIG_ROOT'\nsource \"\$CLI_CONFIG_ROOT/main.sh\"" >> $CLI_CONFIG_ROOT/current/ohmyzsh/oh-my-zsh.sh
+
 echo '\n\nYou are ready to use cli-config now'
 echo '\n\nNote: Your default shell should be ''zsh''. You can change the default shell with chsh'
-echo "Paste this in your .zshrc \n\nCLI_CONFIG_ROOT='$CLI_CONFIG_ROOT'\nsource \"\$CLI_CONFIG_ROOT/main.sh\""
-echo "\n\nAnd restart your shell\n\n"
+echo "\n\nYou're ready to go once you restart your shell. :)\n\n"

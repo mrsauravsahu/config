@@ -23,12 +23,9 @@ mkdir current
 echo "\n\nCLI-CONFIG: Installing antigen plugin manager\n\n"
 curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 
-# TODO: move this to requirements
-# sudo apt install -y zsh
-echo "\n\nCLI-CONFIG: Installing ohmyzsh\n\n"
-curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
 echo "\n\nCLI-CONFIG: Installing programs\n\n"
+. $CLI_CONFIG_ROOT/scripts/install.ohmyzsh.sh
 . $CLI_CONFIG_ROOT/scripts/install.nvm.sh
 . $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
 

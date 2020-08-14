@@ -9,3 +9,6 @@ src
 programs
 
 *conf.sh
+
+# ignore current installation
+current

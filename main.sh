@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # activate antigen
-source $CLI_CONFIG_ROOT/src/antigen.zsh
+source $CLI_CONFIG_ROOT/current/antigen.zsh
 
 # load cli-config env variables
-source $CLI_CONFIG_ROOT/env.sh
+source $CLI_CONFIG_ROOT/scripts/env.sh
 
 # use antigen to setup the terminal
 antigen use oh-my-zsh

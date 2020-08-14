@@ -11,10 +11,10 @@ cd $CLI_CONFIG_ROOT
 CLI_CONFIG_ROOT=`pwd`
 
 # load cli-config env variables
-source ./env.sh
+source $CLI_CONFIG_ROOT/scripts/env.sh
 
 # try and clean old installation
-rm -rf './current' > /dev/null 2> /dev/null || true
+rm -rf "$CLI_CONFIG_ROOT/current" > /dev/null 2> /dev/null || true
 
 # Create installation folder not exists
 mkdir current

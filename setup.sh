@@ -37,8 +37,8 @@ antigen bundle lukechilds/zsh-nvm
 antigen apply
 nvm install --lts
 
-echo "\n\nCLI-CONFIG: Installing pyenv\n\n"
-. ./scripts.programs/pyenv.sh
+echo "\n\nCLI-CONFIG: Installing programs\n\n"
+. ./scripts/install.pyenv.sh
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then

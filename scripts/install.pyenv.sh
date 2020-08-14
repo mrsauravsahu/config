@@ -1,3 +1,5 @@
+echo "\n\nCLI-CONFIG: Installing pyenv\n\n"
+
 git clone --depth=1 https://github.com/pyenv/pyenv.git $CLI_CONFIG_ROOT/programs/pyenv
 
 currentOs=`uname -s`

@@ -21,7 +21,7 @@ mkdir current
 
 # Download antigen into src folder
 echo "\n\nCLI-CONFIG: Installing antigen plugin manager\n\n"
-curl -L git.io/antigen > ./src/antigen.zsh
+curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 
 # TODO: move this to requirements
 # sudo apt install -y zsh
@@ -29,7 +29,7 @@ echo "\n\nCLI-CONFIG: Installing ohmyzsh\n\n"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
 # Load antigen
-. ./src/antigen.zsh
+. $CLI_CONFIG_ROOT/current/antigen.zsh
 antigen use oh-my-zsh
 
 echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"

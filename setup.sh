@@ -28,16 +28,8 @@ curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 echo "\n\nCLI-CONFIG: Installing ohmyzsh\n\n"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
-# Load antigen
-. $CLI_CONFIG_ROOT/current/antigen.zsh
-antigen use oh-my-zsh
-
-echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"
-antigen bundle lukechilds/zsh-nvm
-antigen apply
-nvm install --lts
-
 echo "\n\nCLI-CONFIG: Installing programs\n\n"
+. $CLI_CONFIG_ROOT/scripts/install.nvm.sh
 . $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
 
 currentOs=`uname -s`

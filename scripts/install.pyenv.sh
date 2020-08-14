@@ -1,4 +1,4 @@
-echo "\n\nCLI-CONFIG: Installing pyenv\n\n"
+echo "CLI-CONFIG: Installing pyenv\n\n"
 
 CLI_CONFIG_PYENV_ROOT=$CLI_CONFIG_ROOT/current/pyenv
 

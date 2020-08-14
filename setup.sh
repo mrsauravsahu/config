@@ -11,17 +11,17 @@ cd $CLI_CONFIG_ROOT
 CLI_CONFIG_ROOT=`pwd`
 
 # load cli-config env variables
-source ./env.sh
+source $CLI_CONFIG_ROOT/scripts/env.sh
 
-# try and clean all conf files
-rm -rf '*.conf.sh' > /dev/null 2> /dev/null || true
+# try and clean old installation
+rm -rf "$CLI_CONFIG_ROOT/current" > /dev/null 2> /dev/null || true
 
-# Create src if not exists
-mkdir src > /dev/null 2> /dev/null || true
+# Create installation folder not exists
+mkdir current
 
 # Download antigen into src folder
 echo "\n\nCLI-CONFIG: Installing antigen plugin manager\n\n"
-curl -L git.io/antigen > ./src/antigen.zsh
+curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 
 # TODO: move this to requirements
 # sudo apt install -y zsh
@@ -29,7 +29,7 @@ echo "\n\nCLI-CONFIG: Installing ohmyzsh\n\n"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
 
 # Load antigen
-. ./src/antigen.zsh
+. $CLI_CONFIG_ROOT/current/antigen.zsh
 antigen use oh-my-zsh
 
 echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"
@@ -38,16 +38,16 @@ antigen apply
 nvm install --lts
 
 echo "\n\nCLI-CONFIG: Installing programs\n\n"
-. ./scripts/install.pyenv.sh
+. $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then
     # echo 'You are on linux'
     # TODO: check if we are specifically on Ubuntu
-    . ./scripts/os-specific-setup.ubuntu.sh
+    . $CLI_CONFIG_ROOT/scripts/os-specific-setup.ubuntu.sh
 elif [ $currentOs = "Darwin" ]; then
     # echo 'Mac huh'
-    . ./scripts/os-specific-setup.darwin.sh
+    . $CLI_CONFIG_ROOT/scripts/os-specific-setup.darwin.sh
 else
     echo 'what realm is this?'
 fi

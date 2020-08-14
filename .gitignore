@@ -1,5 +1,3 @@
-src
-
 *.zwc
 
 # git config files location
@@ -9,3 +7,6 @@ src
 programs
 
 *conf.sh
+
+# ignore current installation
+current

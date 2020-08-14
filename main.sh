@@ -35,18 +35,6 @@ eval $(thefuck --alias)
 # run ssh agent
 eval "$(ssh-agent -s)" &> /dev/null
 
-currentOs=`uname -s`
-if [ $currentOs = "Linux" ]; then
-    # echo 'You are on linux'
-    # TODO: check if we are specifically on Ubuntu
-    source $CLI_CONFIG_ROOT/init-scripts/ubuntu.sh
-elif [ $currentOs = "Darwin" ]; then
-    # echo 'Mac huh'
-    source $CLI_CONFIG_ROOT/init-scripts/darwin.sh
-else
-    echo 'what realm is this?'
-fi
-
 # TODO: change to run all *conf.sh files
 # programs configuration
 source $CLI_CONFIG_PROGRAMS_CONF

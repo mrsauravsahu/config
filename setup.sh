@@ -16,8 +16,8 @@ source ./env.sh
 # try and clean old installation
 rm -rf './current' > /dev/null 2> /dev/null || true
 
-# Create src if not exists
-mkdir src > /dev/null 2> /dev/null || true
+# Create installation folder not exists
+mkdir current
 
 # Download antigen into src folder
 echo "\n\nCLI-CONFIG: Installing antigen plugin manager\n\n"

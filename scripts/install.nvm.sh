@@ -1,4 +1,4 @@
-echo "CLI-CONFIG: Installing pyenv\n\n"
+echo "CLI-CONFIG: Installing nvm\n\n"
 
 # Load antigen
 . $CLI_CONFIG_ROOT/current/antigen.zsh

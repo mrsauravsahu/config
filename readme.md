@@ -9,19 +9,34 @@ Safekeeping your shell configuration for setting up easily later
 
 > Coming soon - restore apps from brew cask on Mac
 
+---
+
 ## List of tools 
+
+### Basics
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [antigen](https://github.com/zsh-users/antigen)
-- [nvm](https://github.com/nvm-sh/nvm)
+
+### Programming Support
+- [nvm (Node)](https://github.com/nvm-sh/nvm)
+- [pyenv (Python)](https://github.com/pyenv/pyenv)
+- [netcore (.NET Core)](https://github.com/dotnet/core)
+
+### Helpers and Goodies
 - [direnv](https://github.com/direnv/direnv)
 - [autojump](https://github.com/wting/autojump)
-- [sindresorhus/pure](https://github.com/sindresorhus/pure)
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [thefuck](https://github.com/nvbn/thefuck)
 
-## Requirements
+### Appearence
+- [sindresorhus/pure (theme)](https://github.com/sindresorhus/pure)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
+---
+
+## Getting Started
+
+You require these:
 - zsh
 - curl
 - wget

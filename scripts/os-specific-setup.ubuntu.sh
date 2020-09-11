@@ -1,15 +1,10 @@
-echo "\n\nCLI-CONFIG: Updating apt"
-cmd='apt update -y'
-echo "CLI-CONFIG: $cmd"
-eval $cmd
-
 echo "\n\nCLI-CONFIG: Setting up dependencies"
-cmd='apt install -y python python-dev python-pip'
+cmd='apt install -y --no-install-recommends python python-dev python3-distutils'
 echo "CLI-CONFIG: $cmd"
 eval $cmd
 
 packages='autojump thefuck'
 echo "\n\nCLI-CONFIG: Installing '$packages'"
-cmd="apt install -y $packages"
+cmd="apt install -y --no-install-recommends $packages"
 echo "CLI-CONFIG: $cmd"
 eval $cmd

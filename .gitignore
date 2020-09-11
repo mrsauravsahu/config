@@ -10,3 +10,5 @@ programs
 
 # ignore current installation
 current
+
+/playground

@@ -7,9 +7,8 @@ WORKDIR /app-root
 RUN apt update -y && \
     apt install zsh git curl wget -y 
 
-# COPY scripts ./.cli-config/scripts
-# COPY *.sh ./.cli-config/
-RUN git clone -b docker https://github.com/mrsauravsahu/cli-config ./.cli-config
+COPY scripts ./.cli-config/scripts
+COPY *.sh ./.cli-config/
 
 RUN ./.cli-config/setup.sh
 

@@ -13,8 +13,7 @@ nvm install --lts
 echo "\n\n# nvm configuration" >> $CLI_CONFIG_PROGRAMS_CONF
 echo 'export NVM_DIR="$CLI_CONFIG_ROOT/current/nvm"' >> $CLI_CONFIG_PROGRAMS_CONF
 
-nvm_use_setup_string=$(cat <<EOF
-autoload -U add-zsh-hook
+echo 'autoload -U add-zsh-hook
 load-nvmrc() {
   local node_version="$(nvm version)"
   local nvmrc_path="$(nvm_find_nvmrc)"
@@ -33,8 +32,4 @@ load-nvmrc() {
   fi
 }
 add-zsh-hook chpwd load-nvmrc
-load-nvmrc
-EOF
-)
-
-echo $nvm_use_setup_string >> $CLI_CONFIG_PROGRAMS_CONF
+load-nvmrc' >> $CLI_CONFIG_PROGRAMS_CONF

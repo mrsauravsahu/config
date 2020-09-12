@@ -1,9 +1,6 @@
 # load cli-config env variables
 source $CLI_CONFIG_ROOT/scripts/env.sh
 
-# run the configuration for all installed programs
-source $CLI_CONFIG_PROGRAMS_CONF
-
 # activate antigen
 source $CLI_CONFIG_ROOT/current/antigen.zsh
 
@@ -33,6 +30,5 @@ alias cls=clear
 # configure thefuck
 eval $(thefuck --alias)
 
-# run ssh agent
-eval "$(ssh-agent -s)" &> /dev/null
-
+# run the configuration for all installed programs
+source $CLI_CONFIG_PROGRAMS_CONF

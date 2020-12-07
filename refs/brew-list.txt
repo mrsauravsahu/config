@@ -1,0 +1,10 @@
+autojump
+awscli
+bat
+bat-extras
+direnv
+ffmpeg
+thefuck
+tree
+wget
+yarn

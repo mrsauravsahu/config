@@ -42,6 +42,8 @@ You require these:
 - wget
 - git
 
+> Note: For installing packages,  you'll also require a package manager. On Linux, cli-config  uses `apt`. For macOS, `brew` should be installed.
+
 To check if you have eveything installed
 
 ```zsh
@@ -57,6 +59,8 @@ should give you the path to all the four executables, like so:
 /usr/local/bin/wget
 /usr/bin/git
 ```
+
+> CAUTION: Running the setup without these requirements will result in unknown consequences.
 
 ## Setup
 

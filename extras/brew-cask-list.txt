@@ -16,6 +16,5 @@ spotify
 stoplight-studio
 tableplus
 timer
-virtualbox
 visual-studio-code
 vlc

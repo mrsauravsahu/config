@@ -1,5 +1,4 @@
 autojump
-awscli
 bat
 bat-extras
 direnv

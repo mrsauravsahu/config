@@ -17,3 +17,17 @@ stoplight-studio
 tableplus
 visual-studio-code
 vlc
+amazon-music
+docker
+dotnet-sdk
+firefox
+google-chrome
+iterm2
+kitematic
+microsoft-edge
+postman
+spotify
+timer
+virtualbox
+visual-studio-code
+rectangle

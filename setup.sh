@@ -25,9 +25,11 @@ curl -L git.io/antigen > $CLI_CONFIG_ROOT/current/antigen.zsh
 
 
 echo "\n\nCLI-CONFIG: Installing programs\n\n"
+# Note: Comment out any program that you don't want to be installed
 . $CLI_CONFIG_ROOT/scripts/install.ohmyzsh.sh
 . $CLI_CONFIG_ROOT/scripts/install.nvm.sh
 . $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
+# . $CLI_CONFIG_ROOT/scripts/install.dotnet.sh
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then

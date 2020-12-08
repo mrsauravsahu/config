@@ -15,5 +15,6 @@ responsively
 spotify
 stoplight-studio
 tableplus
+timer
 visual-studio-code
 vlc

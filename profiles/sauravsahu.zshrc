@@ -1,4 +1,5 @@
-CLI_CONFIG_ROOT='/Users/sauravsahu/.cli'
+# Change this appropriately
+CLI_CONFIG_ROOT='/home/sauravsahu/.cli-config'
 
 plugins=(git)
 

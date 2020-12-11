@@ -6,4 +6,4 @@ plugins=(git)
 export ZSH="$CLI_CONFIG_ROOT/current/ohmyzsh"
 source $ZSH/oh-my-zsh.sh
 
-source "$CLI_CONFIG_ROOT/profiles/sauravsahu/main.sh"
+source "$CLI_CONFIG_ROOT/profiles/mrsauravsahu/main.sh"

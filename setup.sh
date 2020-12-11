@@ -29,7 +29,7 @@ echo "\n\nCLI-CONFIG: Installing programs\n\n"
 . $CLI_CONFIG_ROOT/scripts/install.ohmyzsh.sh
 . $CLI_CONFIG_ROOT/scripts/install.nvm.sh
 . $CLI_CONFIG_ROOT/scripts/install.pyenv.sh
-. $CLI_CONFIG_ROOT/scripts/install.dotnet.sh
+# . $CLI_CONFIG_ROOT/scripts/install.dotnet.sh
 
 currentOs=`uname -s`
 if [ $currentOs = "Linux" ]; then

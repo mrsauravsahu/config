@@ -21,8 +21,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # apply all antigen changes
 antigen apply
 
-export PATH=$NVM_DIR:$PATH
-
 # use current node LTS version with nvm
 # suppress output
 nvm use --lts &> /dev/null

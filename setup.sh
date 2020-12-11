@@ -43,6 +43,10 @@ else
     echo 'what realm is this?'
 fi
 
+# generate main config script
+echo >> $CLI_CONFIG_PROGRAMS_CONF
+cat $CLI_CONFIG_ROOT/templates/main-config.sh >> $CLI_CONFIG_PROGRAMS_CONF
+
 echo '\n\nYou are ready to use cli-config now'
 echo '\n\nNote: Your default shell should be ''zsh''. You can change the default shell with chsh'
 echo "Paste this in your .zshrc \n\nCLI_CONFIG_ROOT='$CLI_CONFIG_ROOT'\nsource \"\$CLI_CONFIG_ROOT/main.sh\""

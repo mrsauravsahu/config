@@ -1,9 +1,10 @@
 # cli-config
 
 Helping you setup your CLI experience easily. Some goodies for the ol' terminal.
-> New! 🎉: Setup apps and cool goodies on macOS with brew.
->
-> Checkout the [extras](extras/setup.sh) script.
+
+## What's new? 🎉
+- Setup apps and cool goodies on macOS with brew. Checkout the [extras](extras/setup.sh) script.
+- Support for .nvmrc - set node version for a particular directory!
 
 ## Features
 - one script setup

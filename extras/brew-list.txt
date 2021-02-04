@@ -1,6 +1,6 @@
 autojump
 bat
-bat-extras
+eth-p/software/bat-extras
 direnv
 ffmpeg
 thefuck

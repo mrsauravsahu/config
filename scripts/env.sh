@@ -1,1 +1,2 @@
 export CLI_CONFIG_PROGRAMS_CONF=$CLI_CONFIG_ROOT/current/programs.conf.sh
+export CLI_CONFIG_TOOLS_LOCATION=$CLI_CONFIG_ROOT/current/tools

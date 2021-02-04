@@ -1,7 +1,7 @@
 echo "CLI-CONFIG: Installing nvm\n\n"
 
 # Load antigen
-. $CLI_CONFIG_ROOT/current/antigen.zsh
+. $CLI_CONFIG_TOOLS_LOCATION/antigen.zsh
 antigen use oh-my-zsh
 
 echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"

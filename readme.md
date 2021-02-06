@@ -3,6 +3,7 @@
 Helping you setup your CLI experience easily. Some goodies for the ol' terminal.
 
 ## What's new? 🎉
+- Extra tools available for Linux as well! Check out the [package list](extras/apt-list.txt).
 - Setup apps and cool goodies on macOS with brew. Checkout the [extras](extras/setup.sh) script.
 - Support for .nvmrc - set node version for a particular directory!
 

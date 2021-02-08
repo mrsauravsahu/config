@@ -7,3 +7,4 @@ thefuck
 tree
 wget
 yarn
+tmux

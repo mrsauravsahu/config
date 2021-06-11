@@ -1,4 +1,4 @@
-CLI_CONFIG_THEME='denysdovhan/spaceship-prompt'
+CLI_CONFIG_THEME='mengelbrecht/slimline'
 
 # load cli-config env variables
 source $CLI_CONFIG_ROOT/scripts/env.sh

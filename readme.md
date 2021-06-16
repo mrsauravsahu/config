@@ -134,7 +134,7 @@ source "$CLI_CONFIG_ROOT/main.sh"
 
 You need to set the `$CLI_CONFIG_THEME` variable to change themes. Themes are set with the `antigen theme <$CLI_CONFIG_THEME>` command.
 
-Once you change the variable, run an `antigen reset` to see the changes.
+Once you change the variable, run an `antigen reset` and restart the terminal to see the changes.
 ## Using [mrsauravsahu](profiles/mrsauravsahu) profile
 
 You can view the `main.sh` and `.zshrc` files in this directory to see what commands I run.

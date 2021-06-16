@@ -3,6 +3,7 @@
 Helping you setup your CLI experience easily. Some goodies for the ol' terminal.
 
 ## What's new? 🎉
+- Switch antigen themes with a single env variable `CLI_CONFIG_THEME`
 - Extra tools available for Linux as well! Check out the [package list](extras/apt-list.txt).
 - New extras package - [tmux](https://github.com/tmux/tmux/wiki)
 - Setup apps and cool goodies on macOS with brew. Checkout the [extras](extras/setup.sh) script.
@@ -12,8 +13,23 @@ Helping you setup your CLI experience easily. Some goodies for the ol' terminal.
 - one script setup
 - works with Mac and Linux (Ubuntu)
 - adds lots of helper tools to the shell
+- easy theme switcher
 
 ---
+
+## My Personal Terminal Profile
+
+This repo contains my personalized terminal profile, in the [profiles/mrsauravsahu](./profiles/mrsauravsahu) directory to get a quick start if you'd like. 
+
+Here are the themes I use on a regular basis, and switch among them when I feel like it.
+
+- [mengelbrecht/slimline](https://github.com/mengelbrecht/slimline)
+
+![slimline](assets/mengelbrecht-slimline.png)
+
+- [denysdovhan/spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
+
+![denysdovhan/spaceship-prompt](assets/denysdovhan-spaceship-prompt.png)
 
 ## List of tools 
 
@@ -112,4 +128,20 @@ source "$CLI_CONFIG_ROOT/main.sh"
 # example
 CLI_CONFIG_ROOT='/Users/sauravsahu/Documents/code/personal/config'
 source "$CLI_CONFIG_ROOT/main.sh"
+```
+
+## Switching themes
+
+You need to set the `$CLI_CONFIG_THEME` variable to change themes. Themes are set with the `antigen theme <$CLI_CONFIG_THEME>` command.
+
+Once you change the variable, run an `antigen reset` to see the changes.
+## Using [mrsauravsahu](profiles/mrsauravsahu) profile
+
+You can view the `main.sh` and `.zshrc` files in this directory to see what commands I run.
+
+To use this profile, simply symlink the `.zshrc` file in this directory to your home folder, which you can do with
+
+```bash
+$ ln -s ~/.cli-config/profiles/mrsauravsahu/.zshrc ~/.zshrc
+# depending on where your .cli-config folder is
 ```

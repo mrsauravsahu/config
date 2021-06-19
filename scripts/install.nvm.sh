@@ -1,6 +1,6 @@
-echo "CLI-CONFIG: Installing nvm\n\n"
+Log "CLI-CONFIG: Installing nvm"
 
-echo "\n\nCLI-CONFIG: Installing node.js with nvm\n\n"
+Log "CLI-CONFIG: Installing node.js with nvm"
 zsh -c "
 . $CLI_CONFIG_ROOT/scripts/env.sh
 # Load antigen

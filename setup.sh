@@ -1,27 +1,26 @@
-source "$( cd "${BASH_SOURCE[0]%/*}" && pwd )/lib/oo-bootstrap.sh"
-
 CI=true
-
-# imports from bash-oo
-import util/log
-
-namespace cliConfig
-Log::AddOutput cliConfig INFO
-
-Log "CLI-CONFIG: Starting install... $(UI.Powerline.ThumbsUp)"
-
 # Find the directory where setup.sh is
 # This is relative path to the setup.sh script
 CLI_CONFIG_ROOT=`dirname $0`
 
-# # Goto config dir
+# Goto config dir
 cd $CLI_CONFIG_ROOT
 
 # # Convert CLI_CONFIG_ROOT to absolute path
 CLI_CONFIG_ROOT=`pwd`
 
+# setup bash-oo-framework
+. "$CLI_CONFIG_ROOT/bash-oo-framework/lib/oo-bootstrap.sh"
+
+import util/log
+
+namespace cliConfig
+Log::AddOutput cliConfig INFO
+
+echo "CLI-CONFIG: Starting install... $(UI.Powerline.ThumbsUp)"
+
 # load cli-config env variables
-source $CLI_CONFIG_ROOT/scripts/env.sh
+. $CLI_CONFIG_ROOT/scripts/env.sh
 
 # try and clean old installation
 Log "CLI-CONFIG: Trying to clean old installation: $(UI.Color.Blue)$CLI_CONFIG_ROOT/current$(UI.Color.Default)"

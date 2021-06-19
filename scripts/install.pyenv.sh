@@ -1,3 +1,5 @@
+namespace cliConfig
+
 Log "CLI-CONFIG: Installing pyenv"
 
 CLI_CONFIG_PYENV_ROOT=$CLI_CONFIG_ROOT/current/pyenv
@@ -18,8 +20,8 @@ fi
 Log "CLI-CONFIG: Installing pyenv virtualenv"
 git clone https://github.com/pyenv/pyenv-virtualenv.git $CLI_CONFIG_ROOT/current/pyenv/plugins/pyenv-virtualenv
 
-Log "\n\n# pyenv configuration" >> $CLI_CONFIG_PROGRAMS_CONF
-Log 'export PYENV_ROOT="$CLI_CONFIG_ROOT/current/pyenv"' >> $CLI_CONFIG_PROGRAMS_CONF
-Log 'export PATH="$PYENV_ROOT/bin:$PATH"\n' >> $CLI_CONFIG_PROGRAMS_CONF
-Log 'eval "$(pyenv init -)"' >> $CLI_CONFIG_PROGRAMS_CONF
-Log 'eval "$(pyenv virtualenv-init -)"' >> $CLI_CONFIG_PROGRAMS_CONF
+echo "\n\n# pyenv configuration" >> $CLI_CONFIG_PROGRAMS_CONF
+echo 'export PYENV_ROOT="$CLI_CONFIG_ROOT/current/pyenv"' >> $CLI_CONFIG_PROGRAMS_CONF
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"\n' >> $CLI_CONFIG_PROGRAMS_CONF
+echo 'eval "$(pyenv init -)"' >> $CLI_CONFIG_PROGRAMS_CONF
+echo 'eval "$(pyenv virtualenv-init -)"' >> $CLI_CONFIG_PROGRAMS_CONF

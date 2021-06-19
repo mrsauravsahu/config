@@ -1,3 +1,5 @@
+namespace cliConfig
+
 Log "CLI-CONFIG: Updating apt"
 cmd='apt update --yes'
 Log "CLI-CONFIG: $cmd"

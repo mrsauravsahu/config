@@ -1,3 +1,5 @@
+namespace cliConfig
+
 Log "CLI-CONFIG: Installing nvm"
 
 Log "CLI-CONFIG: Installing node.js with nvm"

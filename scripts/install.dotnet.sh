@@ -1,3 +1,5 @@
+namespace cliConfig
+
 source $CLI_CONFIG_ROOT/scripts/env.sh
 
 Log "CLI-CONFIG: Installing dotnet"

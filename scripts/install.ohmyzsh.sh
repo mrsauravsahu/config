@@ -1,3 +1,5 @@
+namespace cliConfig
+
 Log "CLI-CONFIG: Installing ohmyzsh"
 
 export ZSH="$CLI_CONFIG_ROOT/current/ohmyzsh"

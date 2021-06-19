@@ -16,3 +16,5 @@ current
 *.DS_Store
 
 profiles/mrsauravsahu/*.gitconfig
+
+bash-oo-framework

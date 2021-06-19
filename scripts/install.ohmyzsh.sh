@@ -1,4 +1,6 @@
-echo "CLI-CONFIG: Installing ohmyzsh\n\n"
+namespace cliConfig
+
+Log "CLI-CONFIG: Installing ohmyzsh"
 
 export ZSH="$CLI_CONFIG_ROOT/current/ohmyzsh"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh

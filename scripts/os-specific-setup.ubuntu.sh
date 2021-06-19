@@ -1,15 +1,17 @@
-echo "\n\nCLI-CONFIG: Updating apt"
-cmd='sudo apt update -y'
-echo "CLI-CONFIG: $cmd"
+namespace cliConfig
+
+Log "CLI-CONFIG: Updating apt"
+cmd='apt update --yes'
+Log "CLI-CONFIG: $cmd"
 eval $cmd
 
-echo "\n\nCLI-CONFIG: Setting up dependencies"
-cmd='sudo apt install python python-dev python-pip'
-echo "CLI-CONFIG: $cmd"
+Log "CLI-CONFIG: Setting up dependencies"
+cmd='apt install --yes python python-dev python3-pip'
+Log "CLI-CONFIG: $cmd"
 eval $cmd
 
 packages='autojump thefuck'
-echo "\n\nCLI-CONFIG: Installing '$packages'"
-cmd="sudo apt install $packages"
-echo "CLI-CONFIG: $cmd"
+Log "CLI-CONFIG: Installing '$packages'"
+cmd="apt install --yes $packages"
+Log "CLI-CONFIG: $cmd"
 eval $cmd

@@ -1,0 +1,18 @@
+{
+  "image": "ubuntu:20.04",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.external.linuxExec": "/usr/bin/zsh",
+    "terminal.integrated.cwd": "/workspace",
+    "terminal.integrated.profiles.osx": {
+      "zsh": {
+        "path": "zsh",
+        "args": [
+          "-l"
+        ]
+      },
+    }
+  },
+  "postCreateCommand": "apt update -y && apt install zsh git wget curl -y"
+}

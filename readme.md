@@ -17,19 +17,6 @@ Helping you setup your CLI experience easily. Some goodies for the ol' terminal.
 
 ---
 
-## My Personal Terminal Profile
-
-This repo contains my personalized terminal profile, in the [profiles/mrsauravsahu](./profiles/mrsauravsahu) directory to get a quick start if you'd like. 
-
-Here are the themes I use on a regular basis, and switch among them when I feel like it.
-
-- [mengelbrecht/slimline](https://github.com/mengelbrecht/slimline)
-
-![slimline](assets/mengelbrecht-slimline.png)
-
-- [denysdovhan/spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
-
-![denysdovhan/spaceship-prompt](assets/denysdovhan-spaceship-prompt.png)
 
 ## List of tools 
 
@@ -51,8 +38,6 @@ Here are the themes I use on a regular basis, and switch among them when I feel 
 - [sindresorhus/pure (theme)](https://github.com/sindresorhus/pure)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-
----
 
 ## Getting Started
 
@@ -108,7 +93,7 @@ echo "\n\nCLI-CONFIG: Installing programs\n\n"
 ```
 
 To start the setup, execute the setup.sh file.
-```zsh
+```bash
 ./<path-to-setup.sh>
 # example
 ~/Documents/code/personal/config/setup.sh
@@ -121,7 +106,7 @@ You can paste the instructions you get once you run the setup script.
 
 Or add these lines to your `.zshrc`:
 
-```zsh
+```bash
 CLI_CONFIG_ROOT='<path-to-cli-config>'
 source "$CLI_CONFIG_ROOT/main.sh"
 
@@ -145,3 +130,30 @@ To use this profile, simply symlink the `.zshrc` file in this directory to your 
 $ ln -s ~/.cli-config/profiles/mrsauravsahu/.zshrc ~/.zshrc
 # depending on where your .cli-config folder is
 ```
+## My Personal Terminal Profile
+
+This repo contains my personalized terminal profile, in the [profiles/mrsauravsahu](./profiles/mrsauravsahu) directory to get a quick start if you'd like. 
+
+Here are the themes I use on a regular basis, and switch among them when I feel like it.
+
+- [mengelbrecht/slimline](https://github.com/mengelbrecht/slimline)
+
+![slimline](assets/mengelbrecht-slimline.png)
+
+- [denysdovhan/spaceship-prompt](https://github.com/denysdovhan/spaceship-prompt)
+
+![denysdovhan/spaceship-prompt](assets/denysdovhan-spaceship-prompt.png)
+
+## extras
+
+There are more hidden gems in the [extras](extras) directory. This sets up extra packages that I frequently use. Checkout the [extras/setup.sh](extras/setup.sh) file for the details.
+
+### modern unix alternatives
+
+[ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix) is an awesome repository with a list of some cool alternatives to popular unix commands. I've added a few in [extras/modern-unix-brew-list.txt](extras/modern-unix-brew-list.txt) file. You can install them on macOS with:
+```bash
+cat extras/modern-unix-brew-list.txt | sed | xargs brew install
+``` 
+I'll try and add support for Linux soon along with an uninstall script :)
+
+\- Saurav!

@@ -1,0 +1,13 @@
+bat
+exa
+lsd
+git-delta
+dust
+duf
+broot
+httpie
+procs
+gping
+hyperfine
+tldr
+fzf

@@ -1,4 +1,4 @@
-CLI_CONFIG_THEME='sindresorhus/pure'
+CLI_CONFIG_THEME='robbyrussell'
 
 # load cli-config env variables
 source $CLI_CONFIG_ROOT/scripts/env.sh
